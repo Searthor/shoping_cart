@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.imgbox:hover {
+
+	-moz-box-shadow: 0 0 10px #ccc;
+
+	-webkit-box-shadow: 0 0 10 #ccc;
+
+	 box-shadow: 0 0 10px #CCC;
+
+	 opacity:0.85;
+
+	 filter: alpha(opcity=100);
+
+	 
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	background:#0e1538;
+}
+.heard{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 1rem 8%;
+}
+.heard .logo a{
+   font-size: 2rem;
+   color: #fff;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bolder;
+}
+.heard .logo a span{
+	animation: animates 2s linear infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animates{
+	0%{
+		color: #fff;
+		filter: hue-rotate(0deg);
+		text-shadow: 0 0 10px #00b3ff,
+		0 0 20px #00b3ff,
+		0 0 40px #00b3ff,
+		0 0 80px #00b3ff,
+		0 0 120px #00b3ff,
+		0 0 200px #00b3ff,
+		0 0 300px #00b3ff;
+	}
+		30%,70%{
+		color: #fff;
+		filter: hue-rotate(360deg);
+		text-shadow: 0 0 10px #00b3ff,
+		0 0 20px #00b3ff,
+		0 0 40px #00b3ff,
+		0 0 80px #00b3ff,
+		0 0 120px #00b3ff,
+		0 0 200px #00b3ff,
+		0 0 300px #00b3ff;
+	}
+	100%{
+		color: transparent;
+		box-shadow: none;
+		filter: blur(2px) hue-rotate(0deg);
+}
+
+}
+.heard .menu a{
+	font-size: 1.2rem;
+	color: #fff;
+	padding:  0 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+.heard .menu a:hover{
+	color: #FFA500;
+}
+.heard .menu-login a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: rgba(0,0,0,0.5);
+	padding: 10px 60px;
+	transition: 1s;
+	border-radius: 1rem;
+	text-decoration: none;
+	overflow:  hidden;
+
+}
+.heard .menu-login a:hover{
+	background: var(--clr);
+	box-shadow: 0 0 10px var(--clr),
+	0 0 20px var(--clr),
+	0 0 100px var(--clr);
+}
+.heard .menu-login a::before{
+	content: "";
+	position:absolute;
+	width: 20px;
+	height: 500%;
+	background: var(--clr);
+	transition: 0.5s;
+	animation: animate 2s linear infinite;
+	
+}
+.heard .menu-login a:hover::before{
+	width: 120%;
+}
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transition: rotate(150deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.heard .menu-login a::after{
+	content: '';
+	position: absolute;
+	inset:4px;
+	background: #0e1538;
+	transform: .5s;
+	border-radius: 1rem;
+
+}
+
+.heard .menu-login a:hover::after{
+	background: var(--clr);
+
+}
+.heard .menu-login a span{
+	position: relative;
+	z-index: 1;
+	font-size: 1rem;
+	color:#fff;
+	text-transform: uppercase;
+	opacity: .5;
+	list-style: 4px;
+}
+.heard .menu-login a:hover span{
+	opacity: 1;
+}
+.login{
+	width: 40rem;
+	margin: 10rem auto;
+	background: #ccc;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+.login h1{
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+
+}
+.login input{
+	display: block;
+	width: 100%;
+	padding: .5rem;
+	margin:1rem 0;
+	outline: none;
+	font-size: 1.2rem;
+}
+.login input.btn{
+	background: #1589ff;
+	border:#1589ff;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.login input.btn:hover{
+	box-shadow: 0 0 10px #1589ff,
+	0 0 30px #1589ff;
+}
+.login select{
+	display: block;
+	width: 20%;
+	padding: .5rem;
+	margin:1rem 0;
+	outline: none;
+	font-size: 1.2rem;
+	
+
+
+
+}
+
+

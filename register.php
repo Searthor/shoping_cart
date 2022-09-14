@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- cusom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    <a href="" class="logo"><i class="fas fa-store"></i>stopie</a>
+
+    <form class="search-form">
+        <input type="search" name="" id="search-box" placeholder="ຄົ້ນຫາ ...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    <div class="icon">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+
+        <a href="login.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+    
+</header>
+<!-- header section ends  -->
+
+<!-- navbar section starts -->
+<div class="side-bar">
+
+    <div id="close-side-bar" class="fas fa-times" ></div>
+    <dir class="user">
+
+        <img src="images/user-img.png">
+        <h3>username</h3>
+        <a href="">ອອກຈາກລະບົບ</a>
+        
+    </dir>
+    <nav class="navbar">
+        <a href="index.php"><i class="fas fa-angle-right"></i>ໜ້າຫຼັກ</a>
+        <a href="about.php" ><i class="fas fa-angle-right"></i>ກ່ຽວກັບ</a>
+        <a href="products.php" ><i class="fas fa-angle-right"></i>ສິນຄ້າ</a>
+        <a href="contact.php" ><i class="fas fa-angle-right"></i>ຕິດຕໍ່</a>
+        <a href="login.php" ><i class="fas fa-angle-right"></i>ເຂົ້າລະບົບ</a>
+        <a href="register.php" ><i class="fas fa-angle-right"></i>ລົງທະບຽນ</a>
+        <a href="cart.php" ><i class="fas fa-angle-right"></i>ກະຕ່າ</a>
+    </nav>
+</div>
+
+<!-- navbar section ends -->
+
+
+<!-- register section starts -->
+<section class="register">
+    <form action="resgister_db.php" method="POST">
+        <h3>register now</h3>
+         <select name="m_mtitle" class="form-control" class="box" required>
+        <option value="">-ຄຳນຳຊື່-</option>
+        <option value="MR.">Mr.</option>
+        <option value="Miss">Miss</option> 
+        </select>
+         <input type="text" name="m_name" placeholder="enter your name" class="box" required>
+         <input type="text" name="m_lastname" placeholder="lastname" required class="box">
+         <input type="text" name="m_tel" placeholder="tel" required class="box">
+         <input type="email" name="m_email" placeholder="enter your email" class="box" required>
+         <input type="password" name="m_password" placeholder="enter your password" class="box" required>
+
+         <input type="submit" name="" value="ລົງທະບຽນ" class="btn">
+
+
+        <p>ເປັນສາມາສິດແລ້ວ? <a href="login.php">ເຂົ້າສູ່ລະບົບ</a></p>
+
+    </form>
+</section>
+
+<!-- register section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts -->
+<section class="quick-links">
+    <a href="home.html" class="logo"><i class="fas fa-store"></i>shopie</a>
+    <div class="links">
+  <a href="index.php">ໜ້າຫຼັກ</a>
+        <a href="about.php" >ກ່ຽວກັບ</a>
+        <a href="products.php" >ສິນຄ້າ</a>
+         <a href="contact.php" >ຕິດຕໍ່</a>
+        <a href="login.php" >ເຂົ້າລະບົບ</a>
+        <a href="register.php" >ລົງທະບຽນ</a>
+        <a href="cart.php" >ກະຕ່າ</a>
+    </div>
+
+    <div class="shares">
+       <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+    </div>
+</section>
+
+
+<section class="credit">
+    <p>created by <span>mr.web designer</span>| all rights reserved!</p>
+
+    <img src="images/card_img.png">
+</section>
+
+
+<!-- footer section ends -->
+
+
+
+
+
+<!-- swiper js link      -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
